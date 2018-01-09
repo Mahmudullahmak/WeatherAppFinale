@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
             try {
                 List<Address> myLoc = giocoder.getFromLocationName(query, 1);
-                
+
                 latitude = myLoc.get(0).getLatitude();
                 longitude = myLoc.get(0).getLongitude();
             } catch (IOException e) {
